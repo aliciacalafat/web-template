@@ -5,148 +5,143 @@
     <meta name="viewport" content="width=device-width, inicial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <title>PEC 2 - Inscripcion cursos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i&display=swap">
+    <title> PEC 3 - IA al día </title>
   </head>
   <body>
-    <header class="header">
-      <div class="logo-title">
-        <img class="logo" src="img/isologo-taller.png" alt="Logo taller">
-        <h1>
-          <a class="title" href="index.html" title="Enlace a la página principal">
-            el taller
-          </a>
-        </h1>
-      </div>
-      <nav class="nav">
+    <header>
+      <p>
+        <a href="index.html"> 
+          <span>IA</span> al día
+        </a>
+      </p>
+      <nav>
         <ul>
           <li>
-            <a class="nav-link" href="que-es-la-ceramica.html" title="Enlace a la ceramica">
-              Cerámica
+            <a href="apliciaciones.html" title="Aplicaciones">
+              Aplicaciones
             </a>
           </li>
           <li>
-            <a class="nav-link" href="cursos.html" title="Enlace a los cursos">
-              Cursos
+            <a href="#" title="Despacho 43">
+              Noticias
             </a>
           </li>
-          <li id="nav-current">Inscripción</li>
+          <li>
+            <a href="en-el-cine.html" title="En el cine">
+              En el cine
+            </a>
+          </li>
         </ul>
       </nav>
-    </header>
-    <main class="main-caja">
-      <h1>Inscripción a los cursos</h1>
-      <p>Los campos marcados con * son obligatorios</p>
-      <div id="caja-1">
-        <span class="caja-titulo">Detalles de la inscripción</span>
-        <form id="form-caja1">
-          <div class="columna-izquierda">
-            <div class="campo-izquierda">
-              <label class="label-caja1" for="nombre" pattern="[a-zA-Z-' ]{2,64}" required>Nombre*</label>
-              <input type="text" name="nombre">
-            </div>
-            <div class="campo-izquierda">
-              <label class="label-caja1" for="email" required>Correo electrónico*</label>
-              <input type="text" name="email">
-            </div>
-            <div class="campo-izquierda">
-              <label class="label-caja1" for="fecha" required>Fecha de nacimiento*</label>
-              <input type="date" name="fecha">
-            </div>
-          </div>
-          <div class="columna-derecha">
-            <div class="campo-derecha">
-              <label class="label-caja1" for="apellidos" pattern="[a-zA-Z-' ]{2,128}" required>Apellidos*</label>
-              <input type="text" name="apellidos">
-            </div>
-            <div class="campo-derecha">
-              <label class="label-caja1" for="telefono" required>Teléfono*</label>
-              <input type="text" name="telefono">
-            </div>
-            <div class="campo-derecha">
-              <label class="label-caja1" for="curso" required>Curso*</label>
-              <select name="curso">
-                <option value="torno">Selecciona el curso</option>
-                <option value="torno">Torno</option>
-                <option value="cerámica">Cerámica</option>
-                <option value="modelado">Modelado</option>
-                <option value="esmaltes">Esmaltes</option>
-                <option value="joyeríaCerámica">Joyería cerámica</option>
-              </select>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div id="caja-2">
-        <span class="caja-titulo">Otras informaciones</span>
-        <div id="caja2-2">
-          <span class="caja2-titulo">¿Has hecho otros cursos con nosotros?*</span>
-          <form id="form-caja2">
-            <div class="campo">
-              <input type="radio" name="otrosSi">
-              <label id="siNo" for="otrosSi">Sí</label>
-            </div>
-            <div class="campo">
-              <input type="radio" name="otrosNo">
-              <label id="siNo" for="otrosNo">No</label>
-            </div>
-          </form>
-        </div>
-        <form>
-          <div id="campoComentar">
-            <label for="comentar">¿Quieres comentar o preguntar algo?</label>
-            <textarea name="comentar"></textarea>
-          </div>
-        </form>
-      </div>
-      <div id="caja-3">
-        <span class="caja-titulo">Elige un método de pago*</span>
-        <form id="form-caja3">
-          <div class="campo">
-            <input type="radio" name="transferencia">
-            <label for="transferencia">Transferencia</label>
-          </div>
-          <div class="campo">
-            <input type="radio" name="debitoCredito">
-            <label for="debitoCredito">Tarjeta de débito/crédito</label>
-          </div>
-          <div class="campo">
-            <input type="radio" name="efectivo">
-            <label for="efectivo">En efectivo</label>
-          </div>
-        </form>
-      </div>
+    </header>      
+    <main>  
+      <img src="img/bg-hero-home.jpg" alt="bg hero home">
+      <h1>Noticias y recursos sobre inteligencia artificial</h1>
+      <h2>¿Qué es IA al día?</h2>
       <p>
-        INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <b>EL TALLER. Finalidades</b>: recogida de datos 
-        para la inscripción como socio del interesado. <b>Legitimación</b>: Consentimiento del interesado. 
-        <b>Destinatarios</b>: No están previstas cesiones de datos a terceros, excepto obligación legal. 
-        <b>Derechos</b>: Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, 
-        suprimir sus datos y otros derechos dirigiéndose a info@eltaller.es. <b>Información Adicional</b>: 
-        Puede ampliar la información en el enlace de <a href="#" title="Enlace al aviso legal">Aviso Legal</a>
-        y <a href="#" title="Enlace a la política de privacidad">Política de privacidad</a>. 
+        La inteligencia artificial es la disciplina de las ciencias
+        de la computación que tiene como propósito crear máquinas 
+        que imiten la inteligencia humana para realizar tareas y que
+        pueden mejorar a medida que van recopilando información.
       </p>
-      <div class="campo">
-        <input type="checkbox" name="politica">
-        <label for="politica">He leído y acepto la <a href="#" title="Enlace a la política de privacidad">política de privacidad</a> *</label>
-      </div>
-      <div class="campo">
-        <input type="submit" value="Inscríbeme">
-      </div>
-    </main>
-    <footer class="footer">
-      <div class="footer-1">
-        <a href="#" title="Enlace al aviso legal">
+      <p>
+        En <span>IA</span> al día encontrarás información esencial sobre 
+        esta disciplina y el debate que su uso origina.
+      </p>
+      <h2>Al día</h2>
+      <figure>
+        <img src="img/n-geoffrey-hinton.jpg" alt="Geoffrey Hinton">
+        <figcaption>
+          <p>
+            02-05-2023
+          </p>
+          <h3>Geoffrey Hinton advierte de los peligros de la IA</h3>
+          <p>
+            Geoffrey Hinton, uno de los pioneros de la inteligencia 
+            artificial, se une a las voces críticas que alertan sobre 
+            los peligros de la IA y defiende que los científicos deben
+            colaborar en el control de esta tecnología...
+          </p>
+          <p>
+            <a href="#"> 
+              > LEER MÁS
+            </a>
+          </p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="img/n-ue-ia.jpg" alt="UE">
+        <figcaption>
+          <p>
+            20-04-2023
+          </p>
+          <h3>Bruselas prepara la ley de IA para regular su avance</h3>
+          <p>
+            Una propuesta de ley de Inteligencia Artificial se está 
+            negociando en estos momentos en el Parlamento Europeo. 
+            La ley pretende proteger a los consumidores que usen o 
+            sean objeto de sistemas de IA… 
+          </p>
+          <p>
+            <a href="#"> 
+              > LEER MÁS
+            </a>
+          </p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="img/n-despacho42.jpg" alt="Despacho 42">
+        <figcaption>
+          <p>
+            23-02-2023
+          </p>
+          <h3>Despacho 42: Inteligencia artificial y arte</h3>
+          <p>
+            En el podcast Despacho 42 de 23 de febrero, el profesor 
+            César Córcoles y la profesora Susanna Tesconi conversan 
+            sobre IA y arte con Andrés Burbano, profesor de los 
+            estudios de Artes y Humanidades de la UOC...
+          </p>
+          <p>
+            <a href="despacho-42.html"> 
+              > LEER MÁS
+            </a>
+          </p>
+        </figcaption>
+      </figure>
+    </main>  
+    <footer>
+      <p>
+        <a href="#" title="Sobre nosotros">
+          Sobre nosotros
+        </a>
+        <a href="#" title="Aviso legal">
           Aviso legal
         </a>
-        <a href="#" title="Enlace a la política de privacidad">
+        <a href="#" title="Política de privacidad">
           Política de privacidad
         </a>
-        <a href="#" title="Enlace a la política de cookies">
+        <a href="#" title="Política de cookies">
           Política de cookies
         </a>
-      </div>
+      </p>
       <p>
-        2023 &copy; Alicia Calafat Jaso
+        <a href="#" title="Twitter">
+          <img src="img/twitter.svg" alt="twitter">
+        </a>
+        <a href="#" title="Instagram">
+          <img src="img/instagram.svg" alt="instagram">
+        </a>
+        <a href="#" title="Youtube">
+          <img src="img/youtube.svg" alt="youtube">
+        </a>
+      </p>
+      <p>
+        2023 &copy; IA al día
+      </p>
+      <p>
+        Actividad realizada por Alicia Calafat Jaso
       </p>
     </footer>
   </body>
