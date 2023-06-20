@@ -99,14 +99,6 @@ main {
     display: block;
 }
 
-main h2 {
-    margin-top: 30px;
-}
-
-main p {
-    margin: 10px 0;
-}
-
 .figure-container figure figcaption {
     display: flex;
     flex-direction: column;
@@ -115,6 +107,10 @@ main p {
     padding: 0 10px; 
     box-sizing: border-box; 
     text-align: left;
+}
+
+.figure-date{
+    font-size: 13px;
 }
 
 .figure-container figure figcaption h3 {
@@ -159,7 +155,18 @@ footer p {
     grid-row: 1 / span 1;
     justify-self: center;
   } */
-  
+
+.text-container p {
+    text-align: left;
+}
+
+.text-container p span {
+    font-weight: bold;
+}
+
+.text-container h2 {
+    font-size: 20px;
+}
 
 .container-1,
 .container-2,
@@ -173,6 +180,7 @@ footer p {
   margin: 30px;
 }
 
+/* Large devices */
 @media (min-width: 992px) {
     header {
         padding-left: 15%;
@@ -186,8 +194,7 @@ footer p {
         justify-content: flex-start;
     }
     
-    main h2,
-    main p {
+    .text-container {
         width: 50%;
         margin: 0 auto;
     }
@@ -276,6 +283,7 @@ footer p {
     }
 }
 
+/* Medium devices */
 @media (min-width: 768px) and (max-width: 991px) {
     header {
         padding-left: 5%;
@@ -291,6 +299,24 @@ footer p {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .text-container {
+        width: 90%;
+        margin-left: 30px;
+        margin-right: auto;
+    }
+
+    .text-container p{
+        width: 100%;
+        margin-left: 30px;
+        margin-right: auto;
+    }
+
+    .text-container h2{
+        width: 100%;
+        margin-left: 30px;
+        margin-right: auto;
     }
 
     main img {
@@ -318,7 +344,7 @@ footer p {
         grid-template-columns: 1fr;
     }
     
-      .figure-container figure figcaption p {
+    .figure-container figure figcaption p {
         width: auto;
     }
 
@@ -351,6 +377,12 @@ footer p {
     footer {
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .main-aplicaciones {
@@ -395,6 +427,7 @@ footer p {
     }
 }
 
+/* Small devices */
 @media (min-width: 576px) and (max-width: 767px) {
     header {
         padding-left: 5%;
@@ -412,6 +445,24 @@ footer p {
         justify-content: center;
     }
 
+    .text-container {
+        width: 90%;
+        margin-left: 30px;
+        margin-right: auto;
+    }
+
+    .text-container p{
+        width: 90%;
+        margin-left: 30px;
+        margin-right: auto;
+    }
+
+    .text-container h2{
+        width: 90%;
+        margin-left: 30px;
+        margin-right: auto;
+    }
+
     main img {
         height: 600px;
         width: 100%;
@@ -427,7 +478,7 @@ footer p {
     }
 
     main figure img{
-        height: 170px;
+        height: 460px;
         width: auto;
         margin: 20px auto;
     }
@@ -453,6 +504,12 @@ footer p {
     footer {
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .main-aplicaciones {
@@ -499,6 +556,7 @@ footer p {
     }
 }
 
+/* Small devices */
 @media (max-width: 575px) {
     header {
         padding-left: 5%;
@@ -527,6 +585,24 @@ footer p {
         margin: 20px auto;
     }
 
+    .text-container {
+        width: 90%;
+        margin-left: 30px;
+        margin-right: auto;
+    }
+
+    .text-container p{
+        width: 90%;
+        margin-left: 30px;
+        margin-right: auto;
+    }
+
+    .text-container h2{
+        width: 90%;
+        margin-left: 30px;
+        margin-right: auto;
+    }
+
     main h1 {
         width: 70%;
     }
@@ -543,6 +619,12 @@ footer p {
     footer {
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .main-aplicaciones {
