@@ -120,12 +120,34 @@ li {
 }
 
 .divider {
-    border-top: 1px dotted black;
+    border-top: 1px dotted #7F7F7F;
 }
 
-.title-img, date-img{
+.title-img, .date-img{
     display: inline-block;
+    margin-bottom: -3px;
+}
+
+.title-img{
+    font-size: 15px;
     font-weight: bold;
+    text-transform: uppercase;
+}
+
+.date-img{
+    font-size: 5px;
+}
+
+.article {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.text-content {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
