@@ -20,6 +20,85 @@
     content: "→";
 }
 
+.main-despacho{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.main-despacho h1{
+    font-size: 20px;
+}
+
+.main-despacho h2{
+    font-size: 15px;
+}
+
+.main-despacho h3{
+    font-size: 13px;
+}
+
+.main-despacho p{
+    font-size: 10px;
+    line-height: 1.5; 
+}
+
+.columna1 {
+    grid-column: 1;
+    margin-left: 210px;
+    text-align: left;
+    margin-bottom: 70px;
+}
+
+.columna2 {
+    grid-column: 2;
+    margin-left: 10px;
+    margin-right: 210px;
+    text-align: left;
+}
+
+ol {
+    padding-left: 0;
+}
+
+li {
+    margin-left: 0;
+}  
+
+.box {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 20px;
+    align-items: start;
+    background-color: #F4F6F7;
+}
+
+.box img {
+    max-width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20%;
+}
+
+.nav-despacho ul{
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.nav-despacho ul li {
+    display: block; 
+}
+
+.nav-despacho ul li a {
+    display: block; 
+    color: red; 
+    text-decoration: none;
+    font-size: 10px; 
+}
+
 .cine-videos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -30,6 +109,23 @@
 .cine-videos iframe {
     width: 80%;
     height: 100%;
+}
+
+.circular-img {
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px; 
+    height: 50px; 
+    margin-right: 10px; 
+}
+
+.divider {
+    border-top: 1px dotted black;
+}
+
+.title-img, date-img{
+    display: inline-block;
+    font-weight: bold;
 }
 
 body {
@@ -61,13 +157,13 @@ header a {
     color: black;
 }
 
-nav ul {
+.nav-header ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-nav li {
+.nav-header li {
     text-transform: uppercase;
     margin: 0;
     padding: 0;
@@ -242,7 +338,7 @@ footer p {
         padding-right: 15%;
     }
 
-    nav ul {
+    .nav-header ul {
         display: grid;
         grid-template-columns: repeat(3, auto);
         column-gap: 20px;
@@ -356,7 +452,7 @@ footer p {
         text-align: center;
     }
 
-    nav ul {
+    .nav-header ul {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -507,8 +603,9 @@ footer p {
         text-align: center;
     }
 
-    nav ul {
+    .nav-header ul {
         display: flex;
+        width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -646,7 +743,7 @@ footer p {
         text-align: center;
     }
 
-    nav ul {
+    .nav-header ul {
         display: flex;
         flex-direction: column;
         align-items: center;
